@@ -25,3 +25,8 @@ if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "- skrypt.sh --logs <liczba>: Tworzy automatycznie określoną liczbę plików logx.txt z informacjami o nazwie, skrypcie i dacie"
     echo "- skrypt.sh --help: Wyświetla wszystkie dostępne opcje"
 fi
+
+if [ "$1" = "--init" ]; then
+    git clone https://github.com/wikii2222/lab_git .
+    export PATH=$PATH:$(pwd)
+fi
