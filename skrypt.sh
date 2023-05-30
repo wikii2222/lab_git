@@ -17,3 +17,11 @@ if [ "$1" = "--logs" ]; then
         echo "Data: $(date)" >> log$i.txt
     done
 fi
+
+if [ "$1" = "--help" ]; then
+    echo "Dostępne opcje:"
+    echo "- skrypt.sh --date: Wyświetla dzisiejszą datę"
+    echo "- skrypt.sh --logs: Tworzy automatycznie 100 plików logx.txt z informacjami o nazwie, skrypcie i dacie"
+    echo "- skrypt.sh --logs <liczba>: Tworzy automatycznie określoną liczbę plików logx.txt z informacjami o nazwie, skrypcie i dacie"
+    echo "- skrypt.sh --help: Wyświetla wszystkie dostępne opcje"
+fi
