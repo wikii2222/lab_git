@@ -30,3 +30,18 @@ if [ "$1" = "--init" ]; then
     git clone https://github.com/wikii2222/lab_git .
     export PATH=$PATH:$(pwd)
 fi
+
+if [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
+    if [ -n "$2" ]; then
+        count="$2"
+    else
+        count=100
+    fi
+    
+    for ((i=1; i<=count; i++)); do
+        mkdir -p error$i
+        echo "Nazwa pliku: error$i/error$i.txt" > error$i/error$i.txt
+        echo "Nazwa skryptu: skrypt.sh" >> error$i/error$i.txt
+        echo "Data: $(date)" >> error$i/error$i.txt
+    done
+fi
