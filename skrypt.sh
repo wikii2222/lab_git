@@ -24,6 +24,13 @@ if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "- skrypt.sh --logs: Tworzy automatycznie 100 plików logx.txt z informacjami o nazwie, skrypcie i dacie"
     echo "- skrypt.sh --logs <liczba>: Tworzy automatycznie określoną liczbę plików logx.txt z informacjami o nazwie, skrypcie i dacie"
     echo "- skrypt.sh --help: Wyświetla wszystkie dostępne opcje"
+    echo "- skrypt.sh -d: Wyświetla dzisiejszą datę"
+    echo "- skrypt.sh -l: Tworzy automatycznie 100 plików logx.txt z informacjami o nazwie, skrypcie i dacie"
+    echo "- skrypt.sh -l <liczba>: Tworzy automatycznie określoną liczbę plików logx.txt z informacjami o nazwie, skrypcie i dacie"
+    echo "- skrypt.sh -h: Wyświetla wszystkie dostępne opcje"
+    echo "- skrypt.sh --init: Kolnuje całe repozytorium"
+    echo "- skrypt.sh --error <liczba>: Tworzy pliki z errorem"
+    echo "- skrypt.sh -e <liczba>: Tworzy pliki z errorem"
 fi
 
 if [ "$1" = "--init" ]; then
